@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === "production") {
 app.use("/api", routes);
 
 //Connect to MongoDb
-mongoose.connect(process.env.MONGODB_URI || "mongodb://user:password@ds139632.mlab.com:39632/heroku_dh157080", {useUnifiedTopology: true});
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooksearch", {useUnifiedTopology: true});
 
 // Send every other request to the React app
 // Define any API routes before this runs
